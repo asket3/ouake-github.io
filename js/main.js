@@ -1,6 +1,6 @@
 /*1*/
 function f() {
-    alert('Ви натиснули на кнопку #3');
+    alert('ClientId (by cookie GA): ' + document.cookie.split('; ').find(row => row.startsWith('_ga=')).slice(10));
 }
 /*2*/
 btn1.onclick = function () {
