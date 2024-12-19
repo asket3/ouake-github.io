@@ -4,7 +4,8 @@ function f() {
 }
 /*2*/
 btn1.onclick = function () {
-    alert('Ви натиснули на кнопку #1');
+    alert('ClientId (by gaGlobal): ' + window.gaGlobal.vid);
+    a//lert('Ви натиснули на кнопку #1');
     window.dataLayer.push({
         event: 'btn1_click',  // Название события
         event_category: 'engagement',  // Категория события
@@ -17,5 +18,5 @@ btn1.onclick = function () {
 /*3*/
 var btn2 = document.getElementById("btn2")
 btn2.onclick = function () {
-    alert('Ви натиснули на кнопку #2');
+    alert('ClientId (by AF_SDK): ' + window.AF_SDK.PLUGINS.PBA.afWebUserId);
 }
