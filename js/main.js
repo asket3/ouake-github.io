@@ -5,7 +5,7 @@ function f() {
 /*2*/
 btn1.onclick = function () {
     alert('ClientId (by gaGlobal): ' + window.gaGlobal.vid);
-    a//lert('Ви натиснули на кнопку #1');
+    //alert('Ви натиснули на кнопку #1');
     window.dataLayer.push({
         event: 'btn1_click',  // Название события
         event_category: 'engagement',  // Категория события
