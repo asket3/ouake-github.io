@@ -19,4 +19,10 @@ btn1.onclick = function () {
 var btn2 = document.getElementById("btn2")
 btn2.onclick = function () {
     alert('ClientId (by AF_SDK): ' + window.AF_SDK.PLUGINS.PBA.afWebUserId);
+    window.dataLayer.push({
+        event: 'btn2_click',  // Название события
+        value: 2  // Дополнительное значение
+    });
+
+
 }
